@@ -1,14 +1,11 @@
 html {
     height: 100%;
-    /* 왜 적고 시작하는지*/
 }
 
 body {
     height: 100%;
     padding: 0px;
-    /* 왜 적고 시작하는지*/
     margin: 0px;
-    /* 왜 적고 시작하는지*/
     background: #2D5FC0;
 }
 
@@ -16,6 +13,7 @@ section {
     position: relative;
     width: 1080px;
     height: 640px;
+    background-color: rgba(255, 255, 0, 0.3);
 }
 
 header {
@@ -60,25 +58,9 @@ header>div.user {
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 header>div.user>span {
     font-weight: 300;
-}
-
-section>div.menu {
-    width: 250px;
-    height: 640px;
-    background-color: rgba(255, 255, 0, 0.3);
-}
-
-section>div.contents {
-    position: absolute;
-    border-radius: 30px 0px 0px 0px;
-    width: 830px;
-    height: 640px;
-    right: 0px;
-    bottom: 0px;
-    background-color: white;
 }
