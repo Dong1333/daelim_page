@@ -41,6 +41,9 @@ header>div.title>span {
     font-weight: 300;
 }
 
+
+/* 메뉴영역을 위한 CSS */
+
 header>img {
     position: absolute;
     top: 15px;
@@ -68,17 +71,51 @@ header>div.user>span {
 }
 
 section>div.menu {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
     width: 250px;
     height: 640px;
+    padding-top: 32px;
     background-color: rgba(255, 255, 0, 0.3);
+    z-index: 1;
 }
 
+section>div.menu>div.menu-item {
+    width: 250px;
+    height: 69px;
+    background-color: rgba(255, 0, 0, 0.3);
+    margin-bottom: 9px;
+}
+
+section>div.menu>div.menu-item>a.inner {
+    box-sizing: border-box;
+    display: block;
+    width: 235px;
+    height: 72px;
+    margin-left: 30px;
+    background-color: rgb(254, 161, 0);
+    border-radius: 30px 0px 30px 0px;
+    padding: 20px, 82px, 23px, 30px;
+    font-family: 'S-Core Dream';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+a.inner.active {
+    background-color: #F5924A;
+}
+
+
+/* 메인 컨텐츠를 위한 CSS */
+
 section>div.contents {
-    position: absolute;
+    position: relative;
+    float: right;
     border-radius: 30px 0px 0px 0px;
     width: 830px;
     height: 640px;
-    right: 0px;
-    bottom: 0px;
     background-color: white;
 }
